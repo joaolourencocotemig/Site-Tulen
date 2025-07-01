@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 7% 1fr 93% 1fr;
+}
+
+#naveg {
+    display: grid;
+    grid-template-rows: 90px 1fr;
+}
+
+.imagemredes{
+    position: absolute;
+    left: 1.5%;
+    top: 38%;
+}
+
+#menu {
+    background-color: black;
+width: 100px;}
+
+    .aside-menu {
+    position: fixed;
+    height: 100%;
+    width: 270px;
+    left: -350px;
+    top: 0% ;
+    background: white;
+    color: gray;
+    transition: 0.2s;
+    grid-template-columns: 90px fr;
+    grid-template-rows: 90px fr;
+    display: grid;
+}
+
+input:checked ~ .aside-menu {
+    left: 0;
+    z-index: 100;
+  }
+
+input:checked ~ #toggler {
+    left: 20%;
+}
+
+#toggler{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    opacity: 0%;
+    z-index: 10000;
+    left: -0%;
+}
+
+#cimamenu{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+}
+
+#x-menu{
+    background-color: black;
+    position: relative;
+    height: 100%;
+    width: 40%;
+    display: inline-block;
+    z-index: -1000;
+}
+
+#tulenazul{
+    background-color: blue;
+    width: 60%;
+    height: 100%;
+    font: 20px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    display: inline-block;
+}
+
+#tulenazul h2{
+    position: absolute;
+    top: 35%;
+    letter-spacing: 3px;
+    left: 19%;
+}
+
+#setinhamenu{
+    position: absolute;
+    left: 20%;
+    top: 25%;
+}
+
+
+#ulmenu{
+    margin-top: 35%;
+    margin-left: -15%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    list-style: none;
+}
+
+#aboutlist{
+    color: blue;
+}
+
+#imgmenu{
+    position: absolute;
+    bottom: 2%;
+    left: 23%;
+    z-index: -500;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+#divmenu{
+    height: 20%;
+}
+
+#sociaismenu{
+    height: 20%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#imgsociais{
+   margin-left: 10%;
+}
+
+#textomenu{
+    margin-left: 2%;
+    text-align: center;
+}
+
+#div-geral{
+    display: flex;
+    width: 800px;}
+
+#section-esquerda {
+  background-color: #1d0df9;
+  color: white;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  text-align: left;
+  padding: 60px 20px;
+  font-family: sans-serif;
+}
+
+#imagemabout {
+  display: grid;
+  place-items: center;
+}
+
+#imagemabout img {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: white;
+}
+
+#textoabout {
+  max-width: 600px;
+  display: grid;
+  gap: 20px;
+}
+
+#textoabout h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+#textoabout h4 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.6;
+  color: #c9c9e6;
+  margin: 0;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.botoes button {
+  padding: 10px 25px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.botoes a {
+  color: #b3b3ff;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+
+#section-direita {
+  width: 50%;
+  padding: 60px 40px;
+  background-color: white;
+  color: #333;
+  font-family: sans-serif;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 50px;
+}
+
+.sobre h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.habilidades h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.barra {
+  width: 80px;
+  height: 3px;
+  background-color: #5e35f1;
+  margin-bottom: 30px;
+}
+
+.grade-habilidades {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.habilidade {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.circulo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 6px solid #5e35f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #5e35f1;
+  margin-bottom: 10px;
+}
+
+#section-direita p{
+    color: gray;
+    font-size: 12px;
+}
